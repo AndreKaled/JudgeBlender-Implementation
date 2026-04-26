@@ -14,15 +14,15 @@ relation to the query. Use the following scoring scale (0-3) for evaluation:
 
 Prompt:
 
-Please rate how well the given passage meets the {Criterion Name} criterion in
+Please rate how well the given passage meets the {criterion} criterion in
 
 relation to the query. The output should be a single score (0-3) indicating
 
-{Criterion Description}.
+{criterion}.
 
-Query: {Query}
+Query: {query}
 
-Passage: {Passage}
+Passage: {passage}
 
 Score:
 

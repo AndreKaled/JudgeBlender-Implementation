@@ -36,17 +36,17 @@ given scores. The output must be only a score that indicates how relevant
 
 they are.
 
-Query: {Query}
+Query: {query}
 
-Passage: {Passage}
+Passage: {passage}
 
-Exactness: {Exactness Score} (From Phase One)
+Exactness: {exactness score} (From Phase One)
 
-Topicality: {Topicality Score} (From Phase One)
+Topicality: {topicality score} (From Phase One)
 
-Coverage: {Coverage Score} (From Phase One)
+Coverage: {coverage score} (From Phase One)
 
-Contextual Fit: {Contextual Fit Score} (From Phase One)
+Contextual Fit: {contextual fit score} (From Phase One)
 
 Score:
 
