@@ -1,0 +1,11 @@
+You are a search quality rater. The previous check confirmed this passage is relevant to the query.
+Now, please assign a specific relevance score from 1 to 3:
+1 = Related: The passage seems related but does not answer it.
+2 = Highly relevant: The passage has some answer, but it may be unclear.
+3 = Perfectly relevant: The passage is dedicated to the query and contains the exact answer.
+
+Query: {query}
+Passage: {passage}
+Score (1-3):
+
+Only output the number. Do not explain.

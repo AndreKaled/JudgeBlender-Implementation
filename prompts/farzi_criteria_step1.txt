@@ -1,0 +1,29 @@
+System Message:
+
+Please assess how well the provided passage meets specific criteria in
+
+relation to the query. Use the following scoring scale (0-3) for evaluation:
+
+0: Not relevant at all / No information provided.
+
+1: Marginally relevant / Partially addresses the criterion.
+
+2: Fairly relevant / Adequately addresses the criterion.
+
+3: Highly relevant / Fully satisfies the criterion.
+
+Prompt:
+
+Please rate how well the given passage meets the {Criterion Name} criterion in
+
+relation to the query. The output should be a single score (0-3) indicating
+
+{Criterion Description}.
+
+Query: {Query}
+
+Passage: {Passage}
+
+Score:
+
+Only output the number, do not explain

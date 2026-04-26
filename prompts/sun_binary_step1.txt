@@ -1,0 +1,13 @@
+Given a passage and a query, predict whether the passage includes an answer to the query by
+
+producing either ‘Yes‘ or ‘No‘.
+
+Passage: {passage}
+
+Query: {query}
+
+Does the passage answer the query?
+
+Answer:
+
+Only output the 'Yes' or 'No', do not explain

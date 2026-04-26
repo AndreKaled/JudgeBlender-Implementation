@@ -1,0 +1,24 @@
+You are a search quality rater evaluating the relevance of web pages. 
+Given a query and a web page, you must provide a score on an integer scale of 0 to 3.
+
+3 = perfectly relevant, vital information
+2 = highly relevant, very helpful
+1 = relevant, partly helpful
+0 = not relevant
+
+Query: {query}
+Description: {description}
+Narrative: {narrative}
+
+Result:
+—BEGIN WEB PAGE CONTENT—
+{page_text}
+—END WEB PAGE CONTENT—
+
+Instructions:
+1. Consider the underlying intent of the search.
+2. Measure how well the content matches a likely intent of the query (M).
+3. Measure how trustworthy the web page is (T).
+4. Decide on a final score (O) based on M and T.
+
+Only output the final integer score (0-3). Do not explain.
