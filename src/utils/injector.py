@@ -55,16 +55,19 @@ class PromptInjector:
         }
 
     def format_farzi_s2(self, qid, docid, scores):
-        # scores deve ser um dict: {'Exactness': 2, 'Topicality': 3, ...}
+        # scores é o dict vindo da LLM: {'Exactness': 2, ...}
         q_text, p_text = self.get_texts(qid, docid)
-        return self.templates['farzi_criteria_step2'].format(
-            query=q_text,
-            passage=p_text,
-            exactness_score=scores.get('Exactness'),
-            topicality_score=scores.get('Topicality'),
-            coverage_score=scores.get('Coverage'),
-            contextual_fit_score=scores.get('Contextual Fit')
-        )
+        
+        # mapeamento aos placeholders
+        mapping = {
+            "query": q_text,
+            "passage": p_text,
+            "exactness score": scores.get('Exactness', 0),
+            "topicality score": scores.get('Topicality', 0),
+            "coverage score": scores.get('Coverage', 0),
+            "contextual fit score": scores.get('Contextual Fit', 0)
+        }
+        return self.templates['farzi_criteria_step2'].format(**mapping)
 
     def format_sun_s2(self, qid, docid):
         q_text, p_text = self.get_texts(qid, docid)
