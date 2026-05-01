@@ -15,7 +15,7 @@ Result:
 
 Instructions:
 1. Consider the underlying intent of the search.
-2. Measure how well the content matches a likely intent of the query (M).
-4. Decide on a final score (O) based on M.
+2. Determine if the content provides a direct answer to the query (M).
+3. Decide on a final score (O) based on M.
 
 Only output the final integer score (0-3). Do not explain.
