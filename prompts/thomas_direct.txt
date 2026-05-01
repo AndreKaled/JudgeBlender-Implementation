@@ -7,8 +7,6 @@ Given a query and a web page, you must provide a score on an integer scale of 0 
 0 = not relevant
 
 Query: {query}
-Description: {description}
-Narrative: {narrative}
 
 Result:
 —BEGIN WEB PAGE CONTENT—
@@ -18,7 +16,6 @@ Result:
 Instructions:
 1. Consider the underlying intent of the search.
 2. Measure how well the content matches a likely intent of the query (M).
-3. Measure how trustworthy the web page is (T).
-4. Decide on a final score (O) based on M and T.
+4. Decide on a final score (O) based on M.
 
 Only output the final integer score (0-3). Do not explain.

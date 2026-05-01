@@ -46,7 +46,7 @@ class PromptInjector:
 
         return {
             'thomas': self.templates['thomas_direct'].format(
-                query=q_text, description=q_text, narrative=q_text, page_text=p_text
+                query=q_text, page_text=p_text
             ),
             'farzi_s1': {name: self.templates['farzi_criteria_step1'].format(
                 criterion=name, criterion_description=desc, query=q_text, passage=p_text
