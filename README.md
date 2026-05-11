@@ -20,7 +20,7 @@ De acordo com a metodologia detalhada na Seção 3 do artigo, o framework foi es
 - [x] Modelagem da infraestrutura de injeção.
 - [x] Orquestrador do PromptBlender funcional.
 - [ ] Finalização da coleta de resultados (inferência via Google Colab).
-- [ ] [cite_start]Análise de correlação (Cohen's Kappa e NDCG@10) com os labels humanos do TREC DL 2023.
+- [ ] Análise de correlação (Cohen's Kappa e NDCG@10) com os labels humanos do TREC DL 2023.
 
 ## Reference
 ```bib
